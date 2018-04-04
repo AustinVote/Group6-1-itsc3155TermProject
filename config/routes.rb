@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'generator/index'
+
   get 'homepage/index'
 
   root 'homepage#index'
