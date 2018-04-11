@@ -1,5 +1,6 @@
-<h1>New Generator</h1>
-<%= form_for :generator, url: generators_path do |f| %>
+<h1>Editing character</h1>
+ 
+<%= form_for :generator, url: generator_path(@generator), method: :patch do |f| %>
  
   <% if @generator.errors.any? %>
     <div id="error_explanation">
@@ -14,6 +15,11 @@
       </ul>
     </div>
   <% end %>
+ 
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
  
   <p>
     <%= f.label :text %><br>
