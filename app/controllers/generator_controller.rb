@@ -9,7 +9,7 @@ class GeneratorController < ApplicationController
   end
   
   def new
-    @geneator = Generator.new
+    @generator = Generator.new
   end
   
   def create
