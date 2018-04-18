@@ -7,13 +7,13 @@
   <th>Text</th>
  </tr>
  
- <% @generators.each do |generator| %>  <%-# |generator| refers to the generator table in the schema.db file -%>
+ <% @generators.each do |generator| %>
 
- <tr>
-  <td><%= generator.title %></td>
-  <td><%= generator.text %></td>
-  <td><%= link_to 'Show', generator_path(generator)%></td>
-  <td><%= link_to 'Edit', edit_generator_path(generator) %></td>
- </tr>
+  <tr>
+   <td><%= generator.title %></td>
+   <td><%= generator.text %></td>
+   <td><%= link_to 'Show', generator_path(generator)%></td>
+   <td><%= link_to 'Edit', edit_generator_path(generator) %></td>
+  </tr>
  <% end %>
 </table>
