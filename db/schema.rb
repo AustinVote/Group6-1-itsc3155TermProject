@@ -11,15 +11,28 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20180411172604) do
+ 
+ create_table "random_race", force: :cascade do |t|
+   t.string "race"
+   t.datetime "created_at", null: false
+   t.datetime "updated_at", null: false
+  end
 
-  create_table "generators", force: :cascade do |t|
-    t.string "faction"
-    t.string "race"
+  create_table "random_order", force: :cascade do |t| 
+    t.string "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+    
+  create_table "random_class" , force: :cascade do |t|
     t.string "class"
-    t.string "fprofession"
-    t.string "sprofession"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+   create_table "random_discipline", force: :cascade do |t|
+     t.string "discipline"
+     t.datetime "created_at", null: false
+     t.datetime "updated_at", null: false
+              
 end
