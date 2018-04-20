@@ -1,0 +1,2 @@
+class RandRace < ApplicationRecord
+end

@@ -10,51 +10,52 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180411172604) do
- 
- create_table "random_race", force: :cascade do |t|
-   t.string "human"
-   t.string "charr"
-   t.string "norn"
-   t.string "asura"
-   t.string "sylvari"
-   t.datetime "created_at", null: false
-   t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20180420182054) do
 
-  create_table "random_order", force: :cascade do |t| 
-    t.string "vigil"
-    t.string "whispers"
-    t.string "priory"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-    
-  create_table "random_class" , force: :cascade do |t|
-    t.string "warrior"
-    t.string "guardian"
-    t.string "revenant"
-    t.string "engineer"
-    t.string "ranger"
-    t.string "theif"
-    t.string "elemtnalist"
-    t.string "necromancer"
-    t.string "mesmer"
+  create_table "characters", force: :cascade do |t|
+    t.string "title"
+    t.string "name"
+    t.string "class"
+    t.string "age"
+    t.text "bio"
+    t.text "stats"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-   create_table "random_discipline", force: :cascade do |t|
-     t.string "weaponsmith"
-     t.string "armorysmith"
-     t.string "artificer"
-     t.string "chef"
-     t.string "huntsman"
-     t.string "jeweler"
-     t.string "leatherworker"
-     t.string "scribe"
-     t.string "tailor"
-     t.datetime "created_at", null: false
-     t.datetime "updated_at", null: false
+  create_table "generators", force: :cascade do |t|
+    t.string "title"
+    t.string "name"
+    t.string "class"
+    t.string "age"
+    t.text "bio"
+    t.text "stats"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
+
+  create_table "rand_classes", force: :cascade do |t|
+    t.string "class"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rand_disciplines", force: :cascade do |t|
+    t.string "discipline"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rand_orders", force: :cascade do |t|
+    t.string "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rand_races", force: :cascade do |t|
+    t.string "race"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end

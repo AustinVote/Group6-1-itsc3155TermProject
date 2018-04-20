@@ -1,0 +1,2 @@
+class RandDiscipline < ApplicationRecord
+end

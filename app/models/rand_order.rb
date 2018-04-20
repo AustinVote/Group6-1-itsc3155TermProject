@@ -1,0 +1,2 @@
+class RandOrder < ApplicationRecord
+end
