@@ -1,7 +1,7 @@
 class GeneratorController < ApplicationController
   
   def show
-    #@generator = Generator.find(params[:id])
+    @generator = Generator.find(params[:id])
   end
   
   def index
