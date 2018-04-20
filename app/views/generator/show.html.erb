@@ -1,19 +1,20 @@
 <p>
  <strong>Race:</strong>
- <%= @generator.race %>
+ <%= RandRace.first(:id => "RANDOM()") %>
+ <%= RandRace.order("RANDOM()").first %>
 </p>
 
-<p>
- <strong>Order:</strong>
- <%= @generator.order %>
-</p>
+<!--<p>-->
+<!-- <strong>Order:</strong>-->
 
-<p>
- <strong>Class:</strong>
- <%= @generator.class %>
-</p>
+<!--</p>-->
 
-<p>
- <strong>Discipline:</strong>
- <%= @generator.discipline %>
-</p>
+<!--<p>-->
+<!-- <strong>Class:</strong>-->
+<!-- -->
+<!--</p>-->
+
+<!--<p>-->
+<!-- <strong>Discipline:</strong>-->
+<!-- -->
+<!--</p>-->

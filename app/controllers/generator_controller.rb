@@ -1,7 +1,7 @@
 class GeneratorController < ApplicationController
   
   def show
-    @generator = Generator.find(params[:id])
+    @randrace = RandRace.order("RAND()").first(1)
   end
   
   def index
