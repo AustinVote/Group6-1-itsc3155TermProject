@@ -34,5 +34,6 @@ ActiveRecord::Schema.define(version: 20180411172604) do
      t.string "discipline"
      t.datetime "created_at", null: false
      t.datetime "updated_at", null: false
+  end
               
 end
