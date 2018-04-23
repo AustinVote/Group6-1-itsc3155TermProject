@@ -1,0 +1,2 @@
+class RandProfession < ApplicationRecord
+end
