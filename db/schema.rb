@@ -10,35 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180420182054) do
-
-  create_table "characters", force: :cascade do |t|
-    t.string "title"
-    t.string "name"
-    t.string "class"
-    t.string "age"
-    t.text "bio"
-    t.text "stats"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "generators", force: :cascade do |t|
-    t.string "title"
-    t.string "name"
-    t.string "class"
-    t.string "age"
-    t.text "bio"
-    t.text "stats"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "rand_classes", force: :cascade do |t|
-    t.string "class"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20180423164749) do
 
   create_table "rand_disciplines", force: :cascade do |t|
     t.string "discipline"
@@ -48,6 +20,12 @@ ActiveRecord::Schema.define(version: 20180420182054) do
 
   create_table "rand_orders", force: :cascade do |t|
     t.string "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rand_professions", force: :cascade do |t|
+    t.string "profession"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
