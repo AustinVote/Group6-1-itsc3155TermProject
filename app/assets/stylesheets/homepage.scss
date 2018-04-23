@@ -11,6 +11,7 @@ body {
     background-image: url("https://vignette.wikia.nocookie.net/gw2/images/d/df/GW2Logo_new.png/revision/latest?cb=20170802061850&path-prefix=ja");
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: auto;
 }
 
 a {
@@ -27,4 +28,15 @@ p {
     color: brown;
     font-size: 32px;
     font-family: Elephant;
+}
+
+.button {
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
