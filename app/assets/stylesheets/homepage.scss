@@ -2,10 +2,15 @@ h1 {
     color: brown;
     font-size: 32px;
     font-family: Elephant;
+    text-shadow: #ffffff 0px 0px 1px,   #ffffff 0px 0px 1px,   #ffffff 0px 0px 1px,
+             #ffffff 0px 0px 1px,   #ffffff 0px 0px 1px,   #ffffff 0px 0px 1px;
 }
 
 body {
     background-color: rgb(242,210,156);
+    background-image: url("https://vignette.wikia.nocookie.net/gw2/images/d/df/GW2Logo_new.png/revision/latest?cb=20170802061850&path-prefix=ja");
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 a {
