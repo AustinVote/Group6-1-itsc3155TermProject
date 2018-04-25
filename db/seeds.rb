@@ -9,7 +9,7 @@
 
 RandRace.create([{ race: 'Human' }, {race: 'Charr'}, {race: 'Asura'}, {race: 'Sylvari'}, {race: 'Norn'}])
 
-RandProfession.create([{ discipline: 'Armorsmith' }, {discipline: 'Artificer'}, {discipline: 'Chef'}, {discipline: 'Hunstman'}, 
+RandDiscipline.create([{ discipline: 'Armorsmith' }, {discipline: 'Artificer'}, {discipline: 'Chef'}, {discipline: 'Hunstman'}, 
 {discpine: 'Jeweler'}, {discipline: 'Leatherworker'}, {discipline: 'Scribe'}, {discipline: 'Tailor'}, {discipline: 'Weaponsmith'})]
 
 RandProfession.create([{ profession: 'Mesmer'}, {profession: 'Guardian'}, {profession: 'Necromancer'}, {profession: 'Ranger'},
