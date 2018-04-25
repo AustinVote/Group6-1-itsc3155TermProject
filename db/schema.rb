@@ -12,6 +12,34 @@
 
 ActiveRecord::Schema.define(version: 20180423164749) do
 
+  create_table "characters", force: :cascade do |t|
+    t.string "title"
+    t.string "name"
+    t.string "class"
+    t.string "age"
+    t.text "bio"
+    t.text "stats"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "generators", force: :cascade do |t|
+    t.string "title"
+    t.string "name"
+    t.string "class"
+    t.string "age"
+    t.text "bio"
+    t.text "stats"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rand_classes", force: :cascade do |t|
+    t.string "class"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "rand_disciplines", force: :cascade do |t|
     t.string "discipline"
     t.datetime "created_at", null: false

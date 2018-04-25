@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+RandRace.create([{ race: 'Human' }, {race: 'Charr'}, {race: 'Asura'}, {race: 'Sylvari'}, {race: 'Norn'}])
