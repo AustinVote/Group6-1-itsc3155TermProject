@@ -2,6 +2,8 @@
 <h1>Generator</h1>
 
 <p>Race: <%= @randrace = RandRace.order("RANDOM()").limit(1).first.race %></p>
-
+<p>Profession: <%= @randprofession = RandProfession.order("RANDOM()").limit(1).first.profession %></p>
+<p>Order: <%= @randorder = RandOrder.order("RANDOM()").limit(1).first.order %></p>
+<p>Discipline: <%= @randdiscipline = RandDiscipline.order("RANDOM()").limit(2).first.discipline %></p>
 
 <%= link_to 'Generate Again', ("/generator/index") %>

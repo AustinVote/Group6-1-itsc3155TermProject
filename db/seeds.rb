@@ -8,11 +8,6 @@
 
 
 RandRace.create([{ race: 'Human' }, {race: 'Charr'}, {race: 'Asura'}, {race: 'Sylvari'}, {race: 'Norn'}])
-
-RandDiscipline.create([{ discipline: 'Armorsmith' }, {discipline: 'Artificer'}, {discipline: 'Chef'}, {discipline: 'Hunstman'}, 
-{discpine: 'Jeweler'}, {discipline: 'Leatherworker'}, {discipline: 'Scribe'}, {discipline: 'Tailor'}, {discipline: 'Weaponsmith'})]
-
-RandProfession.create([{ profession: 'Mesmer'}, {profession: 'Guardian'}, {profession: 'Necromancer'}, {profession: 'Ranger'},
-{profession: 'Elementalist'}, {profession: 'Warrior'}, {profession: 'Thief'}, {profession: 'Engineer'}])
-
-RandOrder.create([{order: 'Vigil' }, {order: 'Durmand Priory'}, {order: 'Order of Whispers'}])
+RandOrder.create([{ order: 'The Vigil'}, { order: 'The Order of Whispers'}, { order: 'The Durmand Priory'}])
+RandProfession.create([{ profession: 'Warrior'}, { profession: 'Guardian'}, { profession: 'Revenant'}, { profession: 'Engineer'}, { profession: 'Thief'}, { profession: 'Ranger'}, {profession: 'Elementalist'}, {profession: 'Necromancer'}, {profession: 'Mesmer'}])
+RandDiscipline.create([{ discipline: 'Weaponsmithing'}, {discipline: 'Armorsmithing'}, {discipline: 'Artificer'}, {discipline: 'Chef'}, {discipline: 'Huntsman'}, {discipline: 'Jeweler'}, {discipline: 'Leatherworker'}, {discipline: 'Scribe'}, {discipline: 'Tailor'}])
