@@ -1,0 +1,32 @@
+<h1>Generator Override</h1>
+
+<p>Race: <% if @overrace == nil %>
+<%= @randrace = RandRace.order("RANDOM()").limit(1).first.race %></p>
+<% else %>
+<%= @overrace %>
+<% end %>
+
+<p>Profession: <% if @overprofession == nil %>
+<%= @randprofession = RandProfession.order("RANDOM()").limit(1).first.profession %></p>
+<% else %>
+<%= @overprofession %>
+<% end %>
+
+<p>Order: <% if @overorder == nil %>
+<%= @randorder = RandOrder.order("RANDOM()").limit(1).first.order %></p>
+<% else %>
+<%= @overorder %>
+<% end %>
+
+<p>Discipline: <% if @overdiscipline == nil %>
+<%= @randdiscipline = RandDiscipline.order("RANDOM()").limit(1).first.discipline %></p>
+<% else %>
+<%= @overdiscipline %>
+<% end %>
+
+<div class = "button">
+<%= link_to 'Generate Again', ("/generator/index") %>
+</div>
+<div class = "button">
+<%= link_to 'Home', ("/homepage/index") %>
+</div>

@@ -1,7 +1,10 @@
 class GeneratorController < ApplicationController
   
   def show
-    @randrace = RandRace.order("RAND()").first(1)
+    @overrace = params[:race]
+    @overorder = params[:order]
+    @overprofession = params[:profession]
+    @overdiscipline = params[:discipline]
   end
   
   def index
@@ -33,5 +36,4 @@ class GeneratorController < ApplicationController
       render 'edit'
     end
   end
-    
 end

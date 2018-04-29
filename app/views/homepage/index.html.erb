@@ -1,4 +1,68 @@
 <h1>Character Generator</h1>
+
 <div class = "button">
 <%= link_to 'Generate', controller: 'generator'%>
 </div>
+
+
+<h2>Override</h2>
+
+<%= form_tag("/generator/show", method: "get") do %>
+    <h3>Race:</h3>
+    <%= radio_button_tag(:race, "Human") %>
+    <%= label_tag("race_human", "Human") %><br>
+    <%= radio_button_tag(:race, "Charr") %>
+    <%= label_tag("race_charr", "Charr") %><br>
+    <%= radio_button_tag(:race, "Norn") %>
+    <%= label_tag("race_norn", "Norn") %><br>
+    <%= radio_button_tag(:race, "Asura") %>
+    <%= label_tag("race_asura", "Asura") %><br>
+    <%= radio_button_tag(:race, "Sylvari") %>
+    <%= label_tag("race_sylvari", "Sylvari") %><br><br>
+    <h3>Profession:</h3>
+    <%= radio_button_tag(:profession, "Warrior") %>
+    <%= label_tag("profession_warrior", "Warrior") %><br>
+    <%= radio_button_tag(:profession, "Guardian") %>
+    <%= label_tag("profession_guardian", "Guardian") %><br>
+    <%= radio_button_tag(:profession, "Revenant") %>
+    <%= label_tag("profession_revenant", "Revenant") %><br>
+    <%= radio_button_tag(:profession, "Thief") %>
+    <%= label_tag("profession_thief", "Thief") %><br>
+    <%= radio_button_tag(:profession, "Ranger") %>
+    <%= label_tag("profession_ranger", "Ranger") %><br>
+    <%= radio_button_tag(:profession, "Engineer") %>
+    <%= label_tag("profession_engineer", "Engineer") %><br>
+    <%= radio_button_tag(:profession, "Elementalist") %>
+    <%= label_tag("profession_elementalist", "Elementalist") %><br>
+    <%= radio_button_tag(:profession, "Necromancer") %>
+    <%= label_tag("profession_necromancer", "Necromancer") %><br>
+    <%= radio_button_tag(:profession, "Mesmer") %>
+    <%= label_tag("profession_mesmer", "Mesmer") %><br><br>
+    <h3>Order:</h3>
+    <%= radio_button_tag(:order, "The Vigil") %> 
+    <%= label_tag("order_vigil", "The Vigil") %><br>
+    <%= radio_button_tag(:order, "The Order of Whispers") %> 
+    <%= label_tag("order_whispers", "The Order of Whispers") %><br>
+    <%= radio_button_tag(:order, "The Durmand Priory") %> 
+    <%= label_tag("order_priory", "The Durmand Priory") %><br><br>
+    <h3>Profession:</h3>
+    <%= radio_button_tag(:discipline, "Armorsmithing") %>
+    <%= label_tag("discipline_armorsmithing", "Armorsmithing") %><br>
+    <%= radio_button_tag(:discipline, "Artificer") %>
+    <%= label_tag("discipline_artificer", "Artificer") %><br>
+    <%= radio_button_tag(:discipline, "Chef") %>
+    <%= label_tag("discipline_chef", "Chef") %><br>
+    <%= radio_button_tag(:discipline, "Huntsmans") %>
+    <%= label_tag("discipline_huntsman", "Huntsmans") %><br>
+    <%= radio_button_tag(:discipline, "Jeweler") %>
+    <%= label_tag("discipline_jeweler", "Jeweler") %><br>
+    <%= radio_button_tag(:discipline, "Leatherworker") %>
+    <%= label_tag("discipline_leatherworker", "Leatherworker") %><br>
+    <%= radio_button_tag(:discipline, "Scribe") %>
+    <%= label_tag("discipline_scribe", "Scribe") %><br>
+    <%= radio_button_tag(:discipline, "Tailor") %>
+    <%= label_tag("discipline_tailor", "Tailor") %><br>
+    <%= radio_button_tag(:discipline, "Weaponsmith") %>
+    <%= label_tag("discipline_weaponsmith", "Weaponsmith") %><br><br>
+    <div class = "button"><%= submit_tag("Generate with Overrides", name: 'generator[show]') %></div>
+<% end %>
